@@ -5,24 +5,24 @@ var initialLocations = [{
 },
 {
 	name: 'Queens Zoo',
-	lat: 40.7440,
-	long: 73.8492
+	lat: 
+	long: 
 
 },
 {
 	name: 'Billie Jean King National Tennis Center',
-	lat: 40.7504,
-	long: 73.8456
+	lat: 
+	long: 
 },
 {
 	name: 'New York Hall of Science',
-	lat: 40.7472,
-	long: 73.8517
+	lat: 
+	long: 
 },
 {
 	name: 'World Ice Arena',
-	lat: 40.7517, 
-	long: 73.8375
+	lat:  
+	long:
 }
 ];
 
