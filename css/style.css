@@ -37,10 +37,26 @@ body {
 	width: 100%;
 }
 
-.results {
+.place {
 	margin: 8px;
 	padding: 8px;
 	list-style: none;
 	background-color: #90A583
 	cursor: pointer;
 }
+
+.results {
+	margin: 0;
+	padding: 0;
+}
+@media only screen and (max-device-width : 959px), only screen and (max-width : 959px){
+	.pin {
+	flex-direction: column;
+}
+
+.search-box, .list {
+	font-size: 1em;
+}
+	
+}
+
