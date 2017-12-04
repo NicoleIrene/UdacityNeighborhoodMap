@@ -1,7 +1,7 @@
 var initialLocations = [{
 	name: 'Flushing Meadow Park',
-	lat: 40.7397,
-	long: 73.8408
+	lat: 
+	long: 
 },
 {
 	name: 'Queens Zoo',
