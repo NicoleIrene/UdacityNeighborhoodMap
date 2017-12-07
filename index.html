@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<title>Neighborhood Map</title>
-		<!-- Custom CSS -->
+		<title>Queens Neighborhood Map</title>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 <body>
 	<div class="search" id="search">
-<input class="search-box" id="search-box" placeholder="Search Location" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
+	<input class="search-box" id="search-box" placeholder="Search Location" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
 	</div>
 	<div class="pin" id="pin"> 
 		<div class="list" id="list">
@@ -20,13 +17,13 @@
 				<li class="place" id="place" data-bind="text: name, click: bounce"></li>
 			</ul>
 		</div>
-		<div class="map" id="map">We are experiencing technical difficulties, please try again later.</div>
+	<div class="map" id="map">We are experiencing technical difficulties, please try again later.</div>
 	</div>
-	<script src='js/knockout-3.4.2.js'></script>
-	<script src='js/jquery-3.2.1.min.js'></script>
-	<script src='js/main.js'></script>
-	  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF92QQOeqTRhQqQJaloF3FWubPPamzPAw&callback=initMap"
-  type="text/javascript"></script>
 
+	<script src='js/knockout-3.4.2.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src='js/jquery-3.2.1.min.js'></script> -->
+	<script src='js/main.js'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF92QQOeqTRhQqQJaloF3FWubPPamzPAw&callback=startApp&libraries=places" onerror="errorHandling()"></script>
 </body>
 </html>

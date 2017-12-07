@@ -42,11 +42,12 @@ var Location = function (data) {
 
 	this.visible = ko.observable(true);
 
-//Verify the use of the foursquare api with using the clientid and also the key that is provided when signing up
+//VAuthenticating foursquare api with using the clientid and key that is provided at registration
 var foursquareURL = 'https://api.foursquare.com/v2/venues/search?ll=' + this.lat + ',' + this.long + '&client_id=' + clientID + '&client_secret=' + clientSecret + '&v=20170101 ' + '&query=' + this.name;
 
 $.getJSON(foursquareURL).done(function (data) {
     var results = data.response.venues[0];
+
     self.street = results.location.formattedAddress[0];
     self.city = results.location.formattedAddress[1];
 
@@ -62,7 +63,7 @@ this.contentString = '<div class="info-window-content"><div class="title"><b>' +
 this.infoWindow = new google.maps.InfoWindow({
     content: self.contentString
 });
-// Placing Markers on Map
+// Setting markers on Map
 this.marker = new google.maps.Marker({
     position: new google.maps.LatLng(data.lat, data.long),
     map: map,
@@ -115,7 +116,7 @@ map = new google.maps.Map(document.getElementById('map'), {
 
 // foursquare api settings used to access the page. 
     clientID = "QTD2QJFLKPDYXIDU1IPWWEL32GXYHZVR4355SDIOSAYAWDH3";
-    clientSecret = "QTD2QJFLKPDYXIDU1IPWWEL32GXYHZVR4355SDIOSAYAWDH3";
+    clientSecret = "5QRDUQL1HZ014LCGC5ZVNKK3AXQTECCK4BMPPAVIOSAJEG1Z";
 
     initialLocations.forEach(function (locationItem) {
         self.locationList.push(new Location(locationItem));
