@@ -1,28 +1,28 @@
 var initialLocations = [{
 	name: 'Flushing Meadow Park',
-	lat: 
-	long: 
+	lat: 40.7397,
+	long: 73.8408
 },
 {
 	name: 'Queens Zoo',
-	lat: 
-	long: 
+	lat: 40.7440, 
+	long: 73.8492
 
 },
 {
 	name: 'Billie Jean King National Tennis Center',
-	lat: 
-	long: 
+	lat: 40.7504, 
+	long: 73.8456
 },
 {
 	name: 'New York Hall of Science',
-	lat: 
-	long: 
+	lat: 40.7472, 
+	long: 73.8517
 },
 {
 	name: 'World Ice Arena',
-	lat:  
-	long:
+	lat: 40.7517,  
+	long: 73.8375
 }
 ];
 
@@ -104,7 +104,7 @@ var self = this;
 this.searchTerm = ko.observable("");
 
 this.locationList = ko.observableArray([]);
-//Places the origin of the map on where to first center and concentrate. 
+//This is where the map will originate, not sure what coordinates to use 
 map = new google.maps.Map(document.getElementById('map'), {
   zoom: 14,
   center: {

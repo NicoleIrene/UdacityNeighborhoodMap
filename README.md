@@ -1,3 +1,5 @@
+<!-- Will Edit this README later-->
+
 ## How will I complete this project?
 
 * Review our course JavaScript Design Patterns and check out the Neighborhood Map project rubric.
