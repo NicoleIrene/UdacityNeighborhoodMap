@@ -53,7 +53,7 @@ $.getJSON(foursquareURL).done(function (data) {
 }).fail(function () {
     alert("There was an error with the Foursquare API call. Please refresh the page and try again later.");
 });
-// Infowindow with street and city details.
+// Infowindow with street and city information
 this.contentString = '<div class="info-window-content"><div class="title"><b>' + data.name + "</b></div>" +
     '<div class="content">' + self.street + "</div>" +
     '<div class="content">' + self.city + "</div>";
@@ -62,7 +62,7 @@ this.contentString = '<div class="info-window-content"><div class="title"><b>' +
 this.infoWindow = new google.maps.InfoWindow({
     content: self.contentString
 });
-// Setting MArkers on Map
+// Placing Markers on Map
 this.marker = new google.maps.Marker({
     position: new google.maps.LatLng(data.lat, data.long),
     map: map,
@@ -104,12 +104,12 @@ var self = this;
 this.searchTerm = ko.observable("");
 
 this.locationList = ko.observableArray([]);
-//This is where the map will originate, not sure what coordinates to use 
+//This is where the map will originate
 map = new google.maps.Map(document.getElementById('map'), {
   zoom: 14,
   center: {
-      lat: ,
-      lng:
+      lat: 40.7571,
+      lng: 73.8458
   }
 });
 
@@ -120,7 +120,7 @@ map = new google.maps.Map(document.getElementById('map'), {
     initialLocations.forEach(function (locationItem) {
         self.locationList.push(new Location(locationItem));
     });
-    // Provides filtering for search list 
+    // Filtering for search list 
     this.filteredList = ko.computed(function () {
         var filter = self.searchTerm().toLowerCase();
         if (!filter) {
