@@ -1,28 +1,28 @@
 var initialLocations = [{
-	name: 'Flushing Meadow Park',
-	lat: 40.7397,
-	long: 73.8408
+	name: 'Queens Theater',
+	lat: 40.744134,
+	long: -73.844432
 },
 {
 	name: 'Queens Zoo',
-	lat: 40.7440, 
-	long: 73.8492
+	lat: 40.743660, 
+	long: -73.849958
 
 },
 {
-	name: 'Billie Jean King National Tennis Center',
-	lat: 40.7504, 
-	long: 73.8456
+	name: 'Arthur Ashe Stadium',
+	lat: 40.749740, 
+	long: -73.861363
 },
 {
 	name: 'New York Hall of Science',
-	lat: 40.7472, 
-	long: 73.8517
+	lat: 40.747331, 
+	long: -73.851744
 },
 {
 	name: 'World Ice Arena',
-	lat: 40.7517,  
-	long: 73.8375
+	lat: 40.752652,  
+	long: -73.835199
 }
 ];
 
@@ -109,8 +109,8 @@ this.locationList = ko.observableArray([]);
 map = new google.maps.Map(document.getElementById('map'), {
   zoom: 14,
   center: {
-      lat: 40.7571,
-      lng: 73.8458
+      lat: 40.757018,
+      lng: -73.845874
   }
 });
 
