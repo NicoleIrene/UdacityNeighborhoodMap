@@ -1,4 +1,4 @@
-#Udacity Neighborhood Map
+## Udacity Neighborhood Map
 
 This map is my final project for Udacity's Front-End Web Development Nanodegree. The goal was to create a map using Knockout, Google Maps API & FourSquare API. 
 
@@ -19,9 +19,28 @@ This map is my final project for Udacity's Front-End Web Development Nanodegree.
 
  * App's interface is intuitive to use. For example, the input text area to filter locations is easy to locate.
 
-#Resources 
+## Resources 
+
+* Udacity FEND JavaScript Design Course
 
 * [Knockout](https://nicoleirene.github.io/UdacityNeighborhoodMap/)
+
+* [jQuery](https://jquery.com/)
+
+* Google 
+
+* [Google Map APIs](https://developers.google.com/maps/) 
+* [Google Maps API key](https://developers.google.com/maps/documentation/javascript/get-api-key)
+* [Google Maps Geocoding](https://developers.google.com/maps/documentation/javascript/geocoding)
+* http://www.nickeubank.com/wp-content/uploads/2015/10/RGIS4_geocoding.html
+
+* [Foursquare Developer Account](https://developer.foursquare.com/)
+
+* https://github.com/sadaf30/NeighbourhoodMap
+
+* https://github.com/Cesarlagcc/udacity-neighborhood-project/blob/master/js/app.js
+
+* https://github.com/TheycallmeNate/udacity-project-neighborhood-map 
 
 
 
