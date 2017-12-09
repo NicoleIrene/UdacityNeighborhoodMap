@@ -1,6 +1,6 @@
 ## Udacity Neighborhood Map
 
-This map is my final project for Udacity's Front-End Web Development Nanodegree. The goal was to create a map using Knockout, Google Maps API & FourSquare API. 
+This map is my final project for Udacity's Front-End Web Development Nanodegree. The goal was to create a map of my own using the Knockout framework, Google Maps API & a third party API, I used FourSquare. 
 
 ## Run App
 
