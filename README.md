@@ -32,9 +32,10 @@ This map is my final project for Udacity's Front-End Web Development Nanodegree.
 * [Google Map APIs](https://developers.google.com/maps/) 
 * [Google Maps API key](https://developers.google.com/maps/documentation/javascript/get-api-key)
 * [Google Maps Geocoding](https://developers.google.com/maps/documentation/javascript/geocoding)
-* http://www.nickeubank.com/wp-content/uploads/2015/10/RGIS4_geocoding.html
 
 * [Foursquare Developer Account](https://developer.foursquare.com/)
+
+* http://www.nickeubank.com/wp-content/uploads/2015/10/RGIS4_geocoding.html
 
 * https://github.com/sadaf30/NeighbourhoodMap
 
