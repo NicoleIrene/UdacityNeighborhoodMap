@@ -26,11 +26,11 @@ var initialLocations = [{
 }
 ];
 
+
 // Global variables for the strict mode
 var map;
 var clientID;
 var clientSecret;
-
 
 var Location = function (data) {
 	var self = this;
@@ -42,6 +42,16 @@ var Location = function (data) {
 
 	this.visible = ko.observable(true);
 
+    // Infowindow with street and city information
+this.contentString = '<div class="info-window-content"><div class="title"><b>' + data.name + "</b></div>" +
+    '<div class="content">' + self.street + "</div>" +
+    '<div class="content">' + self.city + "</div>";
+
+
+this.infoWindow = new google.maps.InfoWindow({
+    content: self.contentString
+});
+
 //VAuthenticating foursquare api with using the clientid and key that is provided at registration
 var foursquareURL = 'https://api.foursquare.com/v2/venues/search?ll=' + this.lat + ',' + this.long + '&client_id=' + clientID + '&client_secret=' + clientSecret + '&v=20170101 ' + '&query=' + this.name;
 
@@ -52,17 +62,17 @@ $.getJSON(foursquareURL).done(function (data) {
     self.city = results.location.formattedAddress[1];
 
 }).fail(function () {
+    var property = apiResults.property ?  apiResults.property : "property not available";
     alert("There was an error with the Foursquare API call. Please refresh the page and try again later.");
 });
 // Infowindow with street and city information
 this.contentString = '<div class="info-window-content"><div class="title"><b>' + data.name + "</b></div>" +
     '<div class="content">' + self.street + "</div>" +
-    '<div class="content">' + self.city + "</div>";
-
-
+    '<div class="content">' + self.city + "</div>"
 this.infoWindow = new google.maps.InfoWindow({
     content: self.contentString
 });
+
 // Setting markers on Map
 this.marker = new google.maps.Marker({
     position: new google.maps.LatLng(data.lat, data.long),
@@ -88,6 +98,7 @@ this.marker.addListener('click', function () {
     self.infoWindow.setContent(self.contentString);
 
     self.infoWindow.open(map, this);
+
     // this gives the bouncing affect of the pointer on the map. 
     self.marker.setAnimation(google.maps.Animation.BOUNCE);
     setTimeout(function () {
@@ -99,6 +110,7 @@ this.bounce = function (place) {
     google.maps.event.trigger(self.marker, 'click');
 	};
 };
+
 function AppViewModel() {
 var self = this;
 
