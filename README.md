@@ -6,7 +6,7 @@ This map is my final project for Udacity's Front-End Web Development Nanodegree.
 
 * Click [here](https://github.com/NicoleIrene/UdacityNeighborhoodMap) to access the project files. Download or clone the repo to your machine.
 
-* Double click on the zip file to unzip the folder and navigate to the **index.html** file. Double click on **index.html** to view in your web browser.
+* Double click on the zip file to unzip the folder and navigate to the **index.html** file. Double click on **index.html** to view the page in your web browser.
 
 * Drag and drop the project folder into your text editor to begin coding!
 
