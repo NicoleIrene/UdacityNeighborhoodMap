@@ -52,7 +52,7 @@ var Location = function(data) {
         content: self.contentString
     });
 
-    //VAuthenticating foursquare api with using the clientid and key that is provided at registration
+    //Authenticating foursquare api with using the clientid and key that is provided at registration
     var foursquareURL = 'https://api.foursquare.com/v2/venues/search?ll=' + this.lat + ',' + this.long + '&client_id=' + clientID + '&client_secret=' + clientSecret + '&v=20170101 ' + '&query=' + this.name;
 
     $.getJSON(foursquareURL).done(function(data) {
