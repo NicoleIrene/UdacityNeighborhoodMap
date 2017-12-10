@@ -21,7 +21,7 @@ This map is my final project for Udacity's Front-End Web Development Nanodegree.
 * Wrote code required to add a full-screen map to a page
  by first using the Google Maps API key and then adding additional third party (Foursquare) APIs for map marker list entry information.
 
- * Added functionality to animate a map marker (bounce) when either the list item associated with it or the map marker itself is selected.
+ * Added functionality to animate map marker (bounce) when either the list item associated with it or the map marker itself is selected.
 
  * Added functionality to open an infoWindow with third party information
 
