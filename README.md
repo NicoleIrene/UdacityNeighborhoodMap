@@ -18,7 +18,7 @@ This map is my final project for Udacity's Front-End Web Development Nanodegree.
 
  * Downloaded the Knockout framework to handle the list, filter, tracking click events on list items and any other information on the page that is subject to changing state.
 
-* Wrote code required to add a full-screen map to a page by
+* Wrote code required to add a full-screen map to a page
  by first using the Google Maps API key and then adding additional third party (Foursquare) APIs for map marker list entry information.
 
  * Added functionality to animate a map marker (bounce) when either the list item associated with it or the map marker itself is selected.
