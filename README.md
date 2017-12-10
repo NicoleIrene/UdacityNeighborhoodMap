@@ -4,7 +4,15 @@ This map is my final project for Udacity's Front-End Web Development Nanodegree.
 
 ## Run App
 
-* Click [here](https://nicoleirene.github.io/UdacityNeighborhoodMap/) to see my Queens NY Neighborhood Map  
+* Click [here](https://github.com/NicoleIrene/UdacityNeighborhoodMap) to access the project files. Download or clone the repo to your machine.
+
+* Double click on the zip file to unzip the folder and navigate to the **index.html** file. Double click on **index.html** to view in your web browser.
+
+* Drag and drop the project folder into your text editor to begin coding!
+
+* Click [here](https://nicoleirene.github.io/UdacityNeighborhoodMap/) to see my Queens NY Neighborhood Map live site.
+
+
 
 ## Components
 
